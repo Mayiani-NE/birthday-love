@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Cuttie</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="lockScreen">
+  <h2>Enter Password 💖</h2>
+  <input type="password" id="passwordInput" placeholder="Password">
+  <br><br>
+  <button onclick="unlock()">Baby open this ❤️</button>
+</div>
+
+<!-- Music -->
+<audio id="bgMusic" autoplay loop></audio>
+
+<!-- Hearts & Confetti -->
+<canvas id="confetti"></canvas>
+
+<!-- COVER PAGE -->
+<div id="siteContent" style="display:none;">
+<section class="page active" id="page1">
+
+  <img src="images/cover.jpeg" class="cover-img">
+  <h1>Happy Birthday <span id="name">Cuttie</span> 🎂</h1>
+  <button onclick="nextPage()">Open ❤️</button>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="page2">
+  <h2>So much love for you 💕</h2>
+  <div class="gallery">
+    <img src="images/photo1.jpeg">
+    <img src="images/photo2.jpeg">
+    <img src="images/photo3.jpeg">
+    <img src="images/photo4.jpeg">
+    <img src="images/photo5.jpeg">
+    <img src="images/photo6.jpeg">
+    <img src="images/photo7.jpeg">
+    <img src="images/photo8.jpeg">
+    <img src="images/photo9.jpeg">
+    <img src="images/photo10.jpeg">
+    <img src="images/photo11.jpeg">
+    <img src="images/photo12.jpeg">
+    <img src="images/photo13.jpeg">
+  </div>
+  <button onclick="prevPage()">Back</button>
+  <button onclick="nextPage()">Next</button>
+</section>
+
+<!-- LOVE LETTER -->
+<section class="page" id="page3">
+  <h2>I LOVE YOU 💌</h2>
+  <div class="paper">
+    <p>
+      Happy Birthday Cutieee!!!!!!! ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️. Happy 17😝😝😝😝🫶🫶🫶🫶❤️❤️❤️❤️
+I don’t even know where to start because there’s so much I want to say, but I lack the words(I'm a bit shy, sijaongea na wewe in so long).
+I’m so so grateful for you....more than grateful for you. For your infectious funny ahh laugh, your heart, your smile,your sweet voice, the way you make even ordinary days feel special. You make me feel understood, supported, and loved in a way I didn’t even know I needed. Being with you just feels like heaven on earth, and I love every single bit of you.
+You’re beautiful in ways that go far beyond how you look (though you are smoking hot😮‍💨😍, the prettiest girl in the world....literally!!!!). Your kindness, your strength, the way you care...you are focused......intelligent....you are just amazing....words can't describe how amazing you are. I wish there was a way you could see yourself in my eyes then it would all make sense to you.... all of that makes me love you more and more as each day passes.
+I hope this year brings you happiness, peace, all your goals achieved and so many reasons to smile. You deserve great things, and I hope we last so that I get to be a part of them... a part of this journey of life with you, so that we can continue celebrating many more birthdays together as I annoy you, love the heck out of you, support you(I am your biggest supporter💪💪), and choosing you again and again(I will always choose you and only you, I am obsessed with you!!!).To more life for you Cuttie Wairimu Ng'ang'a and amen to a long fruitful life for such a pure and amazing soul.❤️❤️
+I hope you've enjoyed your big day,I would have loved to spend it with you but I know that there are more to come and we'll spend many more together, my favorite person, my baby. My love for you cannot be put into words....unanimaliza literally!!. I love you so much ❤️❤️❤️❤️. Happy birthday Cuttieeee🥳🥳🥳🎂🎂
+Love, Mayiani❤️🫶
+
+    <button onclick="openSecret()">More 💕</button>
+<p id="secretMessage" style="display:none;">
+I love you so much Cuttie❤️❤️. You being away has made me realize how overly obsessed I am with you and how much you complete me and I am really really missing you....really really missing you bad😪. Is it weird to say that I cried coz I missed you??😂 Because I did cry......it was at night.....2nd February....I was looking at your pictures(I look at your pictures every night before I sleep)....I missed you so much I cried cried...like with tears and all.....nilkuwa na ile waru fulani kwa shingo na it was extra painful....I miss you so much aki you don't know.....and I'm feeling like crying as I write this. I think of you way way too much....sijui uliambia waganga wenu nini this time🙆‍♂️....gai anyway😂....I love you so much and i want to talk to you so bad😫....I've missed our convos alot. I am here waiting impatiently!! for you to come back. I LOVE YOU❤️❤️🫶🫶.
+
+</p>
+
+  </div>
+  <button onclick="prevPage()">Back</button>
+  <button onclick="nextPage()">Next</button>
+</section>
+
+<!-- CAKE -->
+<section class="page" id="page4">
+  <h2>🎉 Happy Birthday <span id="name2">Cuttie</span> 🎉</h2>
+  <h3>Turning <span id="age">17🥳😝</span> Today</h3>
+
+  <div class="cake">
+  <div id="candles">🕯️🕯️🕯️</div>
+</div>
+
+<button onclick="startMic()">Blow Candles 💨</button>
+<p id="wish" style="display:none;">✨ Make a wish baby ✨</p>
+
+
+
+  <button onclick="prevPage()">Back</button>
+</section>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
+</div>

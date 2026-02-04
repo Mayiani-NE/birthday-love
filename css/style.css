@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(135deg, #f6c1e1, #cdb4db, #f5ebe0);
+  color: #4a154b;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+..hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+}
+
+button {
+  background: #ff8fab;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.paper {
+  background: #fdf1e7;
+  padding: 20px;
+  border-radius: 15px;
+  max-height: 60vh;
+  overflow-y: auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+}
+
+.cake {
+  font-size: 60px;
+}
+.cake {
+  margin: 20px;
+}
+
+.candles {
+  font-size: 40px;
+}
+
+#wish {
+  font-size: 22px;
+  color: #b5179e;
+}
+#lockScreen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #ffafcc, #cdb4db);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+@keyframes fade {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+#candles {
+  font-size: 50px;
+  margin: 20px;
+}
+.heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
+  animation: floatUp 5s linear forwards;
+  color: #ff4d6d;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}

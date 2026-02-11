@@ -151,20 +151,6 @@ setInterval(() => {
     heart.remove();
   }, 5000);
 }, 800);
-const SECRET_PASSWORD = "forever";
 
-function openSecret() {
-  document.getElementById("secretPopup").style.display = "flex";
-}
 
-function checkSecret() {
-  let input = document.getElementById("secretInput").value;
-
-  if (input === SECRET_PASSWORD) {
-    document.getElementById("secretPopup").style.display = "none";
-    document.getElementById("secretMessage").style.display = "block";
-  } else {
-    document.getElementById("secretError").style.display = "block";
-  }
-}
 
